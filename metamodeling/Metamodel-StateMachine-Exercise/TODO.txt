@@ -1,0 +1,11 @@
+Exercise: Metamodel - State Machine
+---------------------------------------------------------------------
+
+Entwerfen Sie ein Metamodel, mit dem sich einfache State Machines 
+modellieren lassen.
+
+Beispiel: (siehe MetamodelTest, und StateDiagram.png)
+
+Implementieren Sie das Metamodel. Achten Sie auf eine effiziente
+(= redundanzfreie) Implementierung.
+

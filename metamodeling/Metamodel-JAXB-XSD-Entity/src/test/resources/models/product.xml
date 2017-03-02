@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entity name="Product">
+    <properties>
+        <property id="true" name="id">
+            <type name="int"/>
+        </property>
+        <property id="false" name="name">
+            <type name="String"/>
+        </property>        
+        <property id="false" name="description">
+            <type name="String"/>
+        </property>
+        <property id="false" name="price" x="xxx">
+            <type name="long"/>
+        </property>
+    </properties>
+</entity>
+

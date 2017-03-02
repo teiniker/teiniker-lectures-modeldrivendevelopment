@@ -1,0 +1,23 @@
+Exercise: Expression Builder 
+---------------------------------------------------------------------
+
+Ergänzen Sie das gegebene Projekt um folgende Builder-Klassen:
+
+1. OperationBuilder
+
+2. ParameterBuilder
+
+damit folgender Ausdruck möglich wird:
+
+	MPackage pkg = new PackageBuilder("org.se.lab")
+		.iface("Stack").isPublic()
+			.operation("push").asVoid().parameter("value").asInt()
+			.operation("pop").asInt()
+			.operation("top").asInt().operation("isEmpty").asBoolean()
+			.operation("isFull").asBoolean()
+		.toPackage();
+
+Überprüfen Sie Ihre Implementierungen mit der Klasse "PackageBuilderTest"
+
+Beachte: In Java ist die Verwendung von interface, int, etc. problematisch,
+daher werden andere Schreibweisen gewält, zB: iface.

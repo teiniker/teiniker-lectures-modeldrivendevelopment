@@ -1,0 +1,26 @@
+Exercise: Metamodel - Interface
+---------------------------------------------------------------------
+
+Entwerfen Sie ein Metamodel, mit dem sich einfache Java-Interfaces 
+modellieren lassen.
+
+Beispiel: (siehe InterfaceMetamodelTest)
+
+	package org.se.lab.metamodel;
+	
+	public interface Stack
+	{
+		void push(int value);
+	
+		int pop();
+	
+		int top();
+	
+		boolean isEmpty();
+	
+		boolean isFull();
+	}
+
+Implementieren Sie das Metamodel. Achten Sie auf eine effiziente
+(= redundanzfreie) Implementierung.
+

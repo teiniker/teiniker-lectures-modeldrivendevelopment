@@ -1,0 +1,18 @@
+Exercise: Metamodel - Database Table
+---------------------------------------------------------------------
+
+Entwerfen Sie ein Metamodel, mit dem sich einfache Datenbank-Tabellen 
+modellieren lassen.
+
+Beispiel: (siehe MetamodelTest)
+
+	CREATE TABLE User 
+	(
+		id INT NOT NULL PRIMARY KEY ,
+		username VARCHAR(256) NOT NULL ,
+		passwd VARCHAR(256) NOT NULL 
+	);
+
+Implementieren Sie das Metamodel. Achten Sie auf eine effiziente
+(= redundanzfreie) Implementierung.
+

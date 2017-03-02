@@ -1,0 +1,38 @@
+Exercise: Model Validator
+---------------------------------------------------------------------
+
+Ein Model-Validator wird verwendet, um eine Überprüfung eines bestehenden
+Modells durchzuführen. Dabei wird das Visitor Pattern angewendet. 
+Der Visitor besucht jeden Knoten im Objekt-Modell und überprüft dessen
+Daten. Zusätzlich übernimmt der Visitor auch die Navigation zwischen 
+den Knoten des Modells. 
+
+
+1. Identifier Validator
+---------------------------------------------------------------------
+Implementieren Sie einen Visitor "IdentifierValidator", der die abstrakte
+Klasse "AbstractValidator" erbt.
+Dieser Validator soll die Identifiers (=Namen) folgender Knoten überprüfen:
+	- MPackage
+	- MInterface
+	- MOperation
+	- MParameter
+	- MType
+Ein gültiger Identifier sollte ungleich null sein und auch ungleich "".	 
+
+Verwenden Sie die Klasse "IdentifierValidatorTest" um Ihre Implementierung
+zu überprüfen.
+
+
+2. Method-Name Validator
+---------------------------------------------------------------------
+Implementieren Sie einen Visitor "MethodNameValidator", der die abstrakte
+Klasse "AbstractValidator" erbt.
+Dieser Validator soll überprüfen, ob die Methoden Namen (= MOperation.name)
+mit einem Kleinbuchstaben beginnen. Alle Verstöße gegen diese Regel sollen
+in einer Liste mit dem Namen "upperCaseMethods" gespeichert werden.
+
+Verwenden Sie die Klasse "MethodNameValidatorTest" um Ihre Implementierung
+zu überprüfen.
+
+Tipp: Verwenden Sie die Methode: Character.isUpperCase()

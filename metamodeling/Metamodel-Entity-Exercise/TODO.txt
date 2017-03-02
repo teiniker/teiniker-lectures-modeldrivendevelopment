@@ -1,0 +1,17 @@
+Exercise: Metamodel - Entity
+---------------------------------------------------------------------
+
+Entwerfen Sie ein Metamodel, mit dem sich einfache Entität 
+modellieren lassen.
+
+Beispiel: (siehe MetamodelTest)
+
+	Entity named User
+	Properties: 
+		id:int {as identifier}
+		username:String
+		password:String
+
+Implementieren Sie das Metamodel. Achten Sie auf eine effiziente
+(= redundanzfreie) Implementierung.
+

@@ -1,0 +1,25 @@
+Exercise: Model-Validation mittels Visitor Pattern
+---------------------------------------------------------------------
+
+Semantische Überprüfungen eines Models lassen sich sehr gut mit Hilfe
+des Visitor Patterns implementieren.
+
+
+Entity Validator
+---------------------------------------------------------------------
+Implementieren Sie das gegebene Interface "EntityVisitor" in einer
+Klasse mit dem Namen "EntityValidator".
+
+Überprüfen Sie folgende Eigenschaften des Entity-Modells:
+
+a) Nur ein Property kann als Identifier benutzt werden (id == true)
+
+b) Die Namen von MEntity und MProperty dürfen keine Java Keywords
+	sein. Siehe: 
+	http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "EntityValidatorTest".
+	
+Tipp: Beachten Sie, dass das vorliegende Projekt eine Reference of das
+Projekt "Metamodel-Entity" besitzt.	
+
