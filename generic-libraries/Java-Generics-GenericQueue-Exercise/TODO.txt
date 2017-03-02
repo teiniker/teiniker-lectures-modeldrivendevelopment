@@ -1,0 +1,12 @@
+Generic Libraries
+---------------------------------------------------------------------
+
+Generic Queue
+---------------------------------------------------------------------
+
+Schreiben Sie eine generische Version der Klasse "CharacterQueue"
+names "GenericQueueImpl", welche das Interface "GenericQueue" 
+implementiert. 
+
+Sie können Ihre Implementierung mit der Klasse "GenericQueueTest"
+überprüfen.

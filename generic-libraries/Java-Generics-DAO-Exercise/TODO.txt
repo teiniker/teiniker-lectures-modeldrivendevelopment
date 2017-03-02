@@ -1,0 +1,26 @@
+TODO: Generic DAO
+---------------------------------------------------------------------
+
+Refactor the given DAO interface and implementation into generic ones:
+
+	=> DAOTemplate.java
+	=> DAOImplTemplate.java
+
+and reuse these generic types in the concrete implementations:
+	
+	=> public interface UserDAO extends DAOTemplate<User>
+	=> class UserDAOImpl extends DAOImplTemplate<User> implements UserDAO
+	
+Use the given UserDAOTest to validate your implementations.
+
+
+How to run the MySQL server?
+---------------------------------------------------------------------
+
+To start the MySQL server in the VM type (as root):
+
+# systemctl start mysqld.service
+
+Note that all tables and data is installed during the test's setup
+phase.
+		

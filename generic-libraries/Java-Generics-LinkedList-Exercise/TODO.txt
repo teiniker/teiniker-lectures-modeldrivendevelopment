@@ -1,0 +1,8 @@
+TODO: Generic Linked List
+---------------------------------------------------------------------
+
+Implementieren Sie analog zur Klasse "IntegerLinkedList" eine Klasse
+"GenericLinkedList" die statt int jeden Reference-Type verarbeiten
+kann.
+
+Testen Sie Ihre Implementierung mit der Klasse "GenericLinikedListTest".

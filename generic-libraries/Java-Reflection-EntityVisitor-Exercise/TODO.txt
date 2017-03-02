@@ -1,0 +1,7 @@
+TODO: Java Reflection API - Entity Visitor
+-------------------------------------------------------------------------------
+
+Implementieren Sie das gebene "EntityVisitor" Interface mit Hilfe des Java
+Reflection API und nennen Sie die Klasse "EntityVisitorImpl".
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "EntityVisitorTest".

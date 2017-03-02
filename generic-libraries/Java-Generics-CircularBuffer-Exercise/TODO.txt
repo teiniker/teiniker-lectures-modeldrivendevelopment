@@ -1,0 +1,8 @@
+TODO: Generics Circular Buffer
+---------------------------------------------------------------------
+
+Implementieren Sie analog zur Klasse "IntegerCircularBuffer" eine Klasse
+"GenericCircularBuffer" die statt int jeden Reference-Type verarbeiten
+kann.
+
+Testen Sie Ihre Implementierung mit der Klasse "GenericCircularBufferTest".
