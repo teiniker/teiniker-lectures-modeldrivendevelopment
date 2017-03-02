@@ -1,0 +1,24 @@
+ 
+ Generator Techniques
+----------------------------------
+ 
+ Code Generator (Visitor Pattern)
+----------------------------------
+
+Implementieren Sie einen Code Generator "WebPageGenerator" mit Hilfe des Visitor
+Patterns, der aus einem WebPage Modell den passenden HTML Code generieren kann.
+
+Beispiel:  (siehe src/test/resources/simple-page.html) 
+	
+<html>
+	<head>
+		<title>Software Modeling</title>
+	</head>
+	<body>
+		<h1>Hello world!</h1>
+		<p>This is a simple web page..</p>
+	</body>
+</html>
+	
+
+Testen Sie Ihre Implementierung mit der Klasse "WebPageGeneratorTest".

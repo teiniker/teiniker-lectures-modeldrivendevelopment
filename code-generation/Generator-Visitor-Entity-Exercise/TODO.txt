@@ -1,0 +1,110 @@
+TODO: Generator mittels Visitor Pattern
+---------------------------------------------------------------------
+
+Das vorliegende Projekt verwendet das "Metamodel-Entiy" Module, d.h.
+die Implementierung des Entity-Metamodels liegt bereits vor.
+
+Implementieren Sie die folgenden Code Generatoren durch Anwendung
+des Visitor Patterns (implementieren Sie das gegebene "Visitor" 
+Interface:
+
+1. CreateTableGenerator
+	Es soll das SQL CREATE TABLE Statement generiert werden, mit dem
+	die, zur Entity passende, Datenbanktabelle angelegt werden kann.
+	
+	Beispiel:
+		CREATE TABLE User (
+		    id INT NOT NULL PRIMARY KEY,
+		    username VARCHAR(256) NOT NULL,
+		    password VARCHAR(256) NOT NULL
+		); 
+	 
+	 Testen Sie Ihre Implementierung mit der Klasse "CreateTableGeneratorTest".
+	 
+	 
+2. CStructureGenerator
+	Es soll eine C-Structure generiert werden, mit deren Hilfe man die
+	Daten einer Entität verarbeiten kann.
+	
+	Beispiel:
+		typedef struct {
+		    int id;
+		    char* username;
+		    char* password;
+		} User;
+
+	Testen Sie Ihre Implementierung mit der Klasse "CStructGeneratorTest".
+	
+	
+3. JavaBeanGenerator
+	Es soll eine JavaBean generiert werden, welche die Daten einer Entität
+	speichern kann.
+	
+	Beispiel:
+		/*
+		 * This file was automatically generated
+		 *  DO NOT EDIT!
+		 */
+		
+		public class User
+		{
+		    public User()
+		    {
+		         // default constructor
+		    }
+		
+		    /*
+		     * Property: id
+		     */
+		    private int id;
+		    public void setId(int id)
+		    {
+		        this.id = id;
+		    }
+		    public int getId()
+		    {
+		        return id;
+		    }
+		
+		    /*
+		     * Property: username
+		     */
+		    private String username;
+		    public void setUsername(String username)
+		    {
+		        this.username = username;
+		    }
+		    public String getUsername()
+		    {
+		        return username;
+		    }
+		
+		    /*
+		     * Property: password
+		     */
+		    private String password;
+		    public void setPassword(String password)
+		    {
+		        this.password = password;
+		    }
+		    public String getPassword()
+		    {
+		        return password;
+		    }
+		
+		    /*
+		     * Property: email
+		     */
+		    private String email;
+		    public void setEmail(String email)
+		    {
+		        this.email = email;
+		    }
+		    public String getEmail()
+		    {
+		        return email;
+		    }
+		}
+
+		Testen Sie Ihre Implementierung mit der Klasse "JavaGeneratorTest".
+				 

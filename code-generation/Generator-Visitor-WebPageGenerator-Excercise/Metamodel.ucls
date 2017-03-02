@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.6" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="org.se.lab.MPageElement" project="Generator-Visitor-WebPageGenerator-Excercise" 
+    file="/Generator-Visitor-WebPageGenerator-Excercise/src/main/java/org/se/lab/MPageElement.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="131" width="120" x="217" y="446"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.se.lab.MBody" project="Generator-Visitor-WebPageGenerator-Excercise" 
+    file="/Generator-Visitor-WebPageGenerator-Excercise/src/main/java/org/se/lab/MBody.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="113" width="213" x="217" y="275"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.se.lab.MHead" project="Generator-Visitor-WebPageGenerator-Excercise" 
+    file="/Generator-Visitor-WebPageGenerator-Excercise/src/main/java/org/se/lab/MHead.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="131" width="119" x="470" y="275"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.se.lab.MHeadline" project="Generator-Visitor-WebPageGenerator-Excercise" 
+    file="/Generator-Visitor-WebPageGenerator-Excercise/src/main/java/org/se/lab/MHeadline.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="131" width="125" x="217" y="617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="org.se.lab.MParagraph" project="Generator-Visitor-WebPageGenerator-Excercise" 
+    file="/Generator-Visitor-WebPageGenerator-Excercise/src/main/java/org/se/lab/MParagraph.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="77" width="120" x="382" y="617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.se.lab.MWebPage" project="Generator-Visitor-WebPageGenerator-Excercise" 
+    file="/Generator-Visitor-WebPageGenerator-Excercise/src/main/java/org/se/lab/MWebPage.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="149" width="130" x="343" y="86"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="7">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="8" name="body"/>      
+      <multiplicity id="9" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="12">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="13" name="head"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="15">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="16" name="elements"/>      
+      <multiplicity id="17" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,50 @@
+/*
+ * This code is automatic generated DON'T CHANGE IT!!
+ */
+
+#set($pkgName = ${package.getName()})
+#set($iface = ${package.getInterface()})
+#set($ifaceName = ${iface.getName()})
+#set($allOperations = ${iface.getOperations()})
+#set($void = "void")
+#set($paramCounter = 0)
+#set($loopCounter = 0)
+
+package $pkgName;
+
+public class ${ifaceName}MonitorDecorator extends Abstract${ifaceName}Decorator
+{
+
+	public ${ifaceName}MonitorDecorator(${ifaceName} ${ifaceNameLower})
+	{
+		super(${ifaceNameLower});
+	}
+
+#foreach ( $operation in ${allOperations})
+	#set($paramCounter = ${operation.getParameters().size()})
+	@Override
+	public ${operation.getType().getName()} ${operation.getName()}(#foreach ($param in ${operation.getParameters()})#set($loopCounter=$loopCounter+1)${param.getType().getName()} ${param.getName()}#if($paramCounter > $loopCounter), #set($paramCounter = $paramCounter-1)#end#end)
+	{
+		long time, timediff;
+		#if (${operation.getType().getName()} != $void)${operation.getType().getName()} ${operation.getName()};
+		#end 
+		
+		System.out.println("method: ${operation.getName()}");
+		#foreach ($param in ${operation.getParameters()})System.out.println("parameter ${param.getName()}: " + ${param.getName()});
+		#end
+		
+		time = System.currentTimeMillis();
+		#if (${operation.getType().getName()} != $void)${operation.getName()} = #end #set($loopCounter=0)
+super.${operation.getName()}(#foreach ($param in ${operation.getParameters()})#set($loopCounter=$loopCounter+1)${param.getName()}#if($paramCounter > $loopCounter), #set($paramCounter = $paramCounter-1)#end#end);
+		timediff = System.currentTimeMillis() - time;
+		
+		System.out.println("time: " + timediff + "ms");
+		#if (${operation.getType().getName()} != $void)System.out.println("return: " + ${operation.getName()});
+		return ${operation.getName()};
+		#end		
+
+	}
+	
+#end
+
+}

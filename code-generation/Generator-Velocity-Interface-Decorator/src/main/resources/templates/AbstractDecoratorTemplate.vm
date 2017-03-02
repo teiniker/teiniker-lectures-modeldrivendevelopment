@@ -1,0 +1,37 @@
+/*
+ * This code is automatic generated DON'T CHANGE IT!!
+ */
+
+#set($pkgName = ${package.getName()})
+#set($iface = ${package.getInterface()})
+#set($ifaceName = ${iface.getName()})
+#set($allOperations = ${iface.getOperations()})
+#set($void = "void")
+#set($paramCounter = 0)
+#set($loopCounter = 0)
+
+package $pkgName;
+
+public abstract class Abstract${ifaceName}Decorator implements ${ifaceName}
+{
+	private ${ifaceName} ${ifaceNameLower};
+
+
+	public Abstract${ifaceName}Decorator(${ifaceName} ${ifaceNameLower})
+	{
+		this.${ifaceNameLower} = ${ifaceNameLower};
+	}
+
+#foreach ( $operation in ${allOperations})
+#set($paramCounter = ${operation.getParameters().size()})
+	@Override
+	public ${operation.getType().getName()} ${operation.getName()}(#foreach ($param in ${operation.getParameters()})#set($loopCounter=$loopCounter+1)${param.getType().getName()} ${param.getName()}#if($paramCounter > $loopCounter), #set($paramCounter = $paramCounter-1)#end#end)
+	{
+	#set($loopCounter = 0)
+	#set($paramCounter = ${operation.getParameters().size()})
+		#if (${operation.getType().getName()} != $void) return#end this.${ifaceNameLower}.${operation.getName()}(#foreach ($param in ${operation.getParameters()})#set($loopCounter=$loopCounter+1)${param.getName()}#if($paramCounter > $loopCounter), #set($paramCounter = $paramCounter-1)#end#end);
+	}
+	
+#end
+
+}

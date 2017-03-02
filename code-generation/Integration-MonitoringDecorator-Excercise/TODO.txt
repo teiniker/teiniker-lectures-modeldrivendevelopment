@@ -1,0 +1,35 @@
+Exercise: Integration of Generated Code
+-------------------------------------------------------------------------------
+
+1. Refactoring
+--------------
+Teilen Sie die gegebenen Klassen des Packages "org.se.lab.data" auf die
+folgenden Ordner auf:
+
+	"src/main/java" 		für den manuell zu schreibenden Code
+	"src/generic/java" 		für den generischen Code
+	"src/generated/java"	für Code der aus einem Entity-Model generiert
+							werden könnte.
+
+2. Monitoring Decorator
+-----------------------
+Schlüpfen Sie in die Rolle eines Code-Generators und implementieren Sie die 
+Klasse "UserDAODecorator".
+
+Als manuelle Erweiterung schreiben Sie die Klasse "UserDAOMonitoringDecorator". 
+Es sollen die Laufzeiten der beiden Methoden "findById()" und "findAll()"
+gemessen und als LOG.info() ausgegeben werden.
+Verwenden Sie die Methode: System.currentTimeMillis() 
+
+Beachten Sie, dass Sie die Klasse "DAOFactoryImpl" erweitern müssen, um 
+den Decorator einzubinden.
+
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "UserServiceTest".
+
+
+Tipp: Vergessen Sie nicht den MySQL Server zu starten:
+
+#  systemctl start mariadb.service
+
+

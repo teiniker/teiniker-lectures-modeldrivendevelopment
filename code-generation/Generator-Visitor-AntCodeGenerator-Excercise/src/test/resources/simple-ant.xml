@@ -1,0 +1,8 @@
+<project name="SimpleProject" basedir=".">
+
+	<description>Simple project build file</description>
+
+	<property name="src" value="./src"/>
+	<property name="build" value="./build"/>
+	<property name="dist" value="./dist"/>
+</project>

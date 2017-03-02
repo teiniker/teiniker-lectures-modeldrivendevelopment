@@ -1,0 +1,4 @@
+Collection Template:
+#foreach( $item in $list )
+  > $item 
+#end

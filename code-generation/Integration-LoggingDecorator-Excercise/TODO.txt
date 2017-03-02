@@ -1,0 +1,30 @@
+Exercise: Integration of Generated Code
+-------------------------------------------------------------------------------
+
+1. Refactoring
+--------------
+Teilen Sie die gegebenen Klassen des Packages "org.se.lab.business" auf die
+folgenden Ordner auf:
+
+	"src/main/java" 		für den manuell zu schreibenden Code
+	"src/generic/java" 		für den generischen Code
+	"src/generated/java"	für Code der aus einem Interface-Model generiert
+							werden könnte.
+
+2. Logging Decorator
+--------------------
+Schlüpfen Sie in die Rolle eines Code-Generators und implementieren Sie die 
+Klassen "UserServiceDecorator" und "UserServiceLoggingDecorator" im richtigen
+src Ordner.
+
+Erweitern Sie die Klasse "ServiceFactoryImpl" um den Logging Decorator
+einzubinden.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "UserServiceTest".
+
+
+Tipp: Vergessen Sie nicht den MySQL Server zu starten:
+
+# systemctl start mariadb.service
+
+

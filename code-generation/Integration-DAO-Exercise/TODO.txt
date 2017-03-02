@@ -1,0 +1,43 @@
+Exercise: Integration of Generated Code
+-------------------------------------------------------------------------------
+
+Refactor the given UserDAO interface and UserDAOImpl class into:
+
+a) Generic Code
+	src/main/generic/
+		org.se.lab
+			DAOTemplate.java
+			DAOImplTemplate.java
+
+b) Generated Code
+	src/main/generated/
+		org.se.lab
+			User.java
+			UserDAOBase.java
+			UserDAOImplBase.java
+			
+c) Manual Written Code
+	src/main/					
+		org.se.lab
+			UserDAO.java
+			UserDAOImpl.java
+				
+	Note that only the additional finder methods:
+		
+		List<User> findByLastname(String name);
+		User findByUsername(String name);
+	
+	should be part of the manual code.
+
+Use the given "UserDAOTest" to validate your implementations.
+
+
+How to run the MySQL server?
+---------------------------------------------------------------------
+
+To start the MySQL server in the VM type (as root):
+
+# systemctl start mariadb.service
+
+Note that all tables and data is installed during the test's setup
+phase.
