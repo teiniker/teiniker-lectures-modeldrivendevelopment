@@ -51,7 +51,7 @@ public class CreateTableGeneratorTest
     {
         MProperty property = new MProperty("id", new MInteger());
         property.setId(true);
-        Assert.assertEquals("id INT NOT NULL PRIMARY KEY", visitor.visitMProperty(property));
+        Assert.assertEquals("id INT PRIMARY KEY", visitor.visitMProperty(property));
     }
     
     	
@@ -67,9 +67,9 @@ public class CreateTableGeneratorTest
 
 	    final String STRUCT = 
 	        "CREATE TABLE User (\n" +
-	        "    id INT NOT NULL PRIMARY KEY,\n" +
-	        "    username VARCHAR(256) NOT NULL,\n" +
-	        "    password VARCHAR(256) NOT NULL\n" +
+	        "    id INT PRIMARY KEY,\n" +
+	        "    username VARCHAR(256),\n" +
+	        "    password VARCHAR(256)\n" +
 	        ");";
 		
 	    String code = visitor.visitMEntity(entity);

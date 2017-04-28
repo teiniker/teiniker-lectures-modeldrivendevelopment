@@ -45,7 +45,7 @@ public class CreateTableGenerator
 		String name = property.getName();
 		
 		StringBuilder code = new StringBuilder();
-        code.append(name).append(" ").append(type).append(" NOT NULL");
+        code.append(name).append(" ").append(type);
         if(property.isId())
         {
             code.append(" PRIMARY KEY");
