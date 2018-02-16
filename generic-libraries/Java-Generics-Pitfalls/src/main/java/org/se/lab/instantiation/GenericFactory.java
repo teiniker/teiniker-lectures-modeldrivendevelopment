@@ -21,9 +21,9 @@ public class GenericFactory
 		{
 			element = elementType.newInstance();
 		} 
-		catch(Exception e)
+		catch(Exception ex)
 		{
-			e.printStackTrace();
+			ex.printStackTrace();
 		} 
 		return element;
 	}

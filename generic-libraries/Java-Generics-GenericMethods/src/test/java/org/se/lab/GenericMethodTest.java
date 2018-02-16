@@ -16,9 +16,9 @@ public class GenericMethodTest
         // Note that the generic method forces the same element types for 
         // the parameter array and the result list.
         // List<Object> list = ListUtils.arrayToList(array); // compiler error
-        List<String> list = ListUtils.asList("one", "two", "three");
+        List<String> list = ListUtils.asList("one", "two", "three", "4");
         System.out.println(">> " + list);
-        assertEquals("[one, two, three]", list.toString());
+        assertEquals("[one, two, three, 4]", list.toString());
     }
 
 	

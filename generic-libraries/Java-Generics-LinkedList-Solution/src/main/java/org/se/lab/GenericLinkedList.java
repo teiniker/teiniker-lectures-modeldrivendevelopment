@@ -104,7 +104,7 @@ public class GenericLinkedList<E>
         
         
         /*
-         * Property: value:int
+         * Property: value:E
          */
         private E value;
         public E getValue()

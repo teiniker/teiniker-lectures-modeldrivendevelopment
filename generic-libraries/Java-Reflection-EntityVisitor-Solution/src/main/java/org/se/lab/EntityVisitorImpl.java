@@ -25,8 +25,7 @@ public class EntityVisitorImpl
         
         return sb.toString();
     }
-    
-    
+        
     public String visitProberty(Field field)
     {
         String name = field.getName();
@@ -41,8 +40,7 @@ public class EntityVisitorImpl
         }
         return sb.toString();
     }
-    
-    
+        
     public String visitType(Field field)
     {
     	String typeName = field.getType().getSimpleName();    	

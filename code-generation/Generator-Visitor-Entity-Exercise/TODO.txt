@@ -14,9 +14,9 @@ Interface:
 	
 	Beispiel:
 		CREATE TABLE User (
-		    id INT NOT NULL PRIMARY KEY,
-		    username VARCHAR(256) NOT NULL,
-		    password VARCHAR(256) NOT NULL
+		    id INT PRIMARY KEY,
+		    username VARCHAR(256),
+		    password VARCHAR(256)
 		); 
 	 
 	 Testen Sie Ihre Implementierung mit der Klasse "CreateTableGeneratorTest".

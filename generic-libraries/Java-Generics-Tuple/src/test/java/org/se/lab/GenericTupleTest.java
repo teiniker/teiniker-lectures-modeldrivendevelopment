@@ -23,7 +23,7 @@ public class GenericTupleTest
     @Test
     public void testGet()
     {
-        GenericTuple<Integer,String> t = new GenericTuple<Integer,String>(7, "Teini");
+        GenericTuple<Integer,String> t = new GenericTuple<>(7, "Teini");
         
         Assert.assertEquals(Integer.valueOf(7), t.getFirstElement());
         Assert.assertEquals("Teini", t.getSecondElement());
