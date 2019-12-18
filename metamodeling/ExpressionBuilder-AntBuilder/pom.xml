@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.se.lab</groupId>
-	<artifactId>LabExam-MDD-2015-03-27-G2-Teiniker</artifactId>
+	<artifactId>ExpressionBuilder-AntBuilder</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
