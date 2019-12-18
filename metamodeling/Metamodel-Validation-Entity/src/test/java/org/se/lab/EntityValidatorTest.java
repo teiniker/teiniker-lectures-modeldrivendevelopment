@@ -38,15 +38,8 @@ public class EntityValidatorTest
     {
         validator.visit(entity);
     }
-    
 
-    @Test
-    public void testValidModel()
-    {
-    	validator.visit(entity);
-    }
 
-    
     @Test
     public void testTwoIds()
     {
