@@ -22,7 +22,7 @@ public class CStructGenerator
 		}
 		else
 		{	
-			throw new IllegalArgumentException("unknoen MType:" + type);
+			throw new IllegalArgumentException("unknown MType:" + type);
 		}
 	}
 
