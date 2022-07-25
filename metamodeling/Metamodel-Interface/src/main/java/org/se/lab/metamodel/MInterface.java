@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MInterface
-	extends MType
+	extends MNamedElement
 {
 	/*
 	 * Constructor

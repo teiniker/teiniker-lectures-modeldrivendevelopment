@@ -9,6 +9,7 @@ package org.se.lab;
 
 #include "Macros.java"
 
+//#define DEBUGGING
 
 public class Main
 {
