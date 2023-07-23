@@ -1,0 +1,9 @@
+TODO: Generic Stack
+---------------------------------------------------------------------
+
+Implementieren Sie analog zur Klasse "StringStack" eine Klasse
+"GenericStack" die statt String jeden Reference-Type verarbeiten
+kann.
+
+Testen Sie Ihre Implementierung mit der Klasse "GenericStackTest".
+
