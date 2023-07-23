@@ -10,8 +10,8 @@ public class IntegerTupleTest
     public void testGet()
     {
         IntegerTuple t = new IntegerTuple(7, 13);
-        Assert.assertEquals(new Integer(7), t.getFirstElement());
-        Assert.assertEquals(new Integer(13), t.getSecondElement());
+        Assert.assertEquals(Integer.valueOf(7), t.getFirstElement());
+        Assert.assertEquals(Integer.valueOf(13), t.getSecondElement());
     }
     
     @Test

@@ -9,7 +9,7 @@ import org.junit.Test;
  */
 public class GenericCircularBufferTest
 {
-    private GenericCircularBuffer<String> buffer = new GenericCircularBuffer<String>(5);
+    private GenericCircularBuffer<String> buffer = new GenericCircularBuffer<>(5);
     
     @Test
     public void testPutAndGet()
