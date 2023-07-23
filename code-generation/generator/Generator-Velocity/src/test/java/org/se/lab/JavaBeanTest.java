@@ -14,7 +14,7 @@ import org.se.lab.MString;
 
 public class JavaBeanTest
 {
-	private static final String TEMPLATE_FILE = "templates/JavaBeanTemplate1.vm";
+	private static final String TEMPLATE_FILE = "src/test/resources/templates/JavaBeanTemplate1.vm";
 	private MBean bean;
 	
 	@Before

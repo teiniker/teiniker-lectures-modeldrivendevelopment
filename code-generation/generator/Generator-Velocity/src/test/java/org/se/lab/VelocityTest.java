@@ -23,7 +23,7 @@ public class VelocityTest
         VelocityContext context = new VelocityContext();
         context.put("name", new String("Egon Teiniker"));
         
-        Template template = Velocity.getTemplate("templates/HelloTemplate.vm");
+        Template template = Velocity.getTemplate("src/test/resources/templates/HelloTemplate.vm");
         StringWriter sw = new StringWriter();
         template.merge(context, sw);
         
@@ -40,7 +40,7 @@ public class VelocityTest
         VelocityContext context = new VelocityContext();
         context.put("name", new String("Egon Teiniker"));
         
-        Template template = ve.getTemplate("templates/HelloTemplate.vm");
+        Template template = ve.getTemplate("src/test/resources/templates/HelloTemplate.vm");
         StringWriter sw = new StringWriter();
         template.merge(context, sw);
         
@@ -58,7 +58,7 @@ public class VelocityTest
         context.put("list", list);
                 
         StringWriter sw = new StringWriter();
-        Velocity.mergeTemplate("templates/CollectionTemplate.vm","UTF-8", context, sw);
+        Velocity.mergeTemplate("src/test/resources/templates/CollectionTemplate.vm","UTF-8", context, sw);
 
         System.out.println(sw.toString());     
     }
