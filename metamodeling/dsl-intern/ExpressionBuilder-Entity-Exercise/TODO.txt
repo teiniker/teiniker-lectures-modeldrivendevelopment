@@ -1,0 +1,25 @@
+Exercise: Expression Builder
+---------------------------------------------------------------------
+
+Ein Expression Builder wird verwendet, um Modelle mit Hilfe eines
+Builder Patterns aufbauen zu können.
+Im Kontext von Internal Domain Specific Lanugaes nennt man diese
+Art von Metamodel-API "Fluent Interface".
+
+
+EntityBuilder
+---------------------------------------------------------------------
+Binden Sie das Projekt "Metamodel-Entity" ein, um auf die Metaklassen
+zugreifen zu können: siehe Properties/Java Build Path/Projects
+
+Implementieren Sie die Klasse "EntityBuilder" nach dem Builder Pattern,
+welches ein Fluent Interface zur Erstellung von Entity Modellen 
+darstellt.
+
+Verwenden Sie die Klasse "EntityBuilderTest" um zu sehen, welche 
+Methoden der Builder benötigt, und um zu testen, ob Ihre Implementierung
+des Builders funktioneiert.
+
+Tipp: Da nur ein Concrete Builder verwendet wird, wird auf ein explizites 
+Builder Interface verzichtet. 
+

@@ -1,0 +1,18 @@
+<project name="SimpleProject" basedir="" default="compile">
+
+	<description>Simple project build file</description>
+
+	<property name="src" value="src" />
+	<property name="build" value="./build" />
+	<property name="dist" value="./dist" />
+
+	<target name="clean">
+		<delete dir="build" />
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="build/classes" />
+		<javac srcdir="src" destdir="build/classes" />
+	</target>
+
+</project>
