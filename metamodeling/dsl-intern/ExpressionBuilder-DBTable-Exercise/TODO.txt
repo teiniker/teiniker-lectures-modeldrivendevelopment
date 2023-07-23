@@ -1,0 +1,15 @@
+Exercise: Expression Builder (DBTable Metamodel)
+---------------------------------------------------------------------
+
+Sie haben das Metamodel einer einfachen Datenbank-Tabelle gegeben.
+
+Implementieren Sie einen Expression-Builder mit dem Namen "TableBuilder",
+mit dem es möglich ist, Tabellen-Modelle zu erstellen.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "TableBuilderTest".
+
+Tipp: Variable-Argumenten-Listen in Java => foo(String... names)
+	wobei names innerhalb der Methode foo() als String[] verwendet werden
+	kann.
+	
+	 

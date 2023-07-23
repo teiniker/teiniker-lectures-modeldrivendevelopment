@@ -1,0 +1,15 @@
+Exercise: Validation Visitor (DBTable Metamodel)
+---------------------------------------------------------------------
+
+Schreiben Sie eine Klasse "TableValidator" welche das interface 
+"MTableVisitor" implementiert.
+Überprüfen Sie durch diesen Visitor, ob nur ein "PRIMARY KEY"
+Constraint definiert wurde.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "TableValidatorTest".
+
+Tipp: Variable-Argumenten-Listen in Java => foo(String... names)
+	wobei names innerhalb der Methode foo() als String[] verwendet werden
+	kann.
+	
+	 
