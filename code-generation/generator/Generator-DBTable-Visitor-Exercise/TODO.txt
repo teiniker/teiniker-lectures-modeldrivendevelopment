@@ -1,0 +1,13 @@
+Exercise: COde Generator (Visitor Pattern)
+-------------------------------------------------------------------------------
+Implementieren Sie einen Visitor mit dem Namen "SqlGeneratorVisitor",
+der aus dem DB Modell ein SQL CREATE Statement generiert.
+
+CREATE TABLE User
+(
+    id INT NOT NULL PRIMARY KEY ,
+    username VARCHAR(256) NOT NULL ,
+    passwd VARCHAR(256) NOT NULL
+);
+
+
