@@ -19,7 +19,7 @@ public class GenericFactory
 		E element = null;
 		try
 		{
-			element = elementType.newInstance();
+			element = elementType.getDeclaredConstructor().newInstance();
 		} 
 		catch(Exception ex)
 		{

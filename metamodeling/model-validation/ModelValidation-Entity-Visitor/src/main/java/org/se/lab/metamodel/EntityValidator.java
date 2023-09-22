@@ -20,9 +20,11 @@ public class EntityValidator
 	@Override
 	public void visit(MEntity entity)
 	{
+		// Check constraints
 		if(KEY_WORDS.contains(entity.getName()))
 			throw new IllegalStateException("Entity.name is a keyword: " + entity.getName());	
 
+		// Navigation
 		for(MProperty p : entity.getProperties())
 		{
 			visit(p);
@@ -33,6 +35,7 @@ public class EntityValidator
 	@Override
 	public void visit(MProperty property)
 	{
+		// Check constaints
 		if(KEY_WORDS.contains(property.getName()))
 			throw new IllegalStateException("MProperty.name is a keyword: " + property.getName());	
 	
@@ -46,6 +49,7 @@ public class EntityValidator
 		
 		// Note that there are no checks in this example but in general, we have
 		// to visit all nodes of the model.
+		// Navigation
 		visit(property.getType());
 	}
 

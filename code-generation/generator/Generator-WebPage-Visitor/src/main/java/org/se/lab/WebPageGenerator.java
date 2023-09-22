@@ -12,17 +12,25 @@ public class WebPageGenerator
 	
 	private void visit(MWebPage page)
 	{
+		// Code Generation
 		html.append("<html>\n");
+
+		// Navigation
 		visit(page.getHead());
 		visit(page.getBody());
+
+		// Code Generation
 		html.append("</html>\n");
 	}
 	
 	private void visit(MHead head)
 	{
+		// Code Generation
 		html.append("\t<head>\n");
 		html.append("\t\t<title>").append(head.getTitle()).append("</title>\n");
 		html.append("\t</head>\n");
+
+		// Navigation
 	}
 	
 	private void visit(MBody body)

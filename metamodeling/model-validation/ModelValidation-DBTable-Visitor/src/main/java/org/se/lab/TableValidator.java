@@ -8,6 +8,9 @@ public class TableValidator
 	@Override
 	public void visit(MTable t)
 	{
+		// Check constraints
+
+		// Navigation
 		for(MColumn c : t.getColumns())
 		{
 			visit(c);
@@ -17,6 +20,9 @@ public class TableValidator
 	@Override
 	public void visit(MColumn c)
 	{
+		// Check constraints
+
+		// Navigation
 		visit(c.getType());
 		for(MConstraint constraint : c.getConstraints())
 		{
@@ -33,6 +39,7 @@ public class TableValidator
 	@Override
 	public void visit(MConstraint c)
 	{
+		// Check constraints
 		if(c.getName().equalsIgnoreCase("PRIMARY KEY"))			
 		{
 			if(hasPrimaryKey)
@@ -40,5 +47,7 @@ public class TableValidator
 			else
 				hasPrimaryKey = true;
 		}
+
+		// Navigation
 	}
 }

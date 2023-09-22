@@ -1,6 +1,7 @@
 package org.se.lab.metamodel;
 
 public abstract class MNamedElement
+	implements Validation
 {
 	/*
 	 * Property: name:String
