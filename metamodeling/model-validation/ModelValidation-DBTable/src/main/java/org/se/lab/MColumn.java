@@ -40,4 +40,13 @@ public class MColumn extends MNamedElement
 	{
 		this.constraints = constraints;
 	}
+
+	// Model Validation
+	public void validate()
+	{
+		// validate
+
+		// navigate
+		getConstraints().forEach(c -> c.validate());
+	}
 }

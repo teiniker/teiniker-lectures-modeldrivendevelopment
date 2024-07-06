@@ -1,6 +1,7 @@
 package org.se.lab;
 
 public abstract class MNamedElement
+	implements ModelValidator
 {
 	/*
 	 * Constructor

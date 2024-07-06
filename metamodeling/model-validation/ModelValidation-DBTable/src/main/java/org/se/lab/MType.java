@@ -10,4 +10,9 @@ public class MType extends MNamedElement
 		super(name);
 	}
 
+	// Model Validation
+	public void validate()
+	{
+		// validate
+	}
 }

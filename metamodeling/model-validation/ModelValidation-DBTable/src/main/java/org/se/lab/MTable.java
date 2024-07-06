@@ -24,5 +24,14 @@ public class MTable extends MNamedElement
 	public void setColumns(List<MColumn> columns)
 	{
 		this.columns = columns;
-	}	
+	}
+
+	// Model Validation
+	public void validate()
+	{
+		// validate
+
+		// navigate
+		getColumns().forEach(c -> c.validate());
+	}
 }

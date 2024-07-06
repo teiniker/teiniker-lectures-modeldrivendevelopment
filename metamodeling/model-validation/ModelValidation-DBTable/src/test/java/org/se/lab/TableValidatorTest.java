@@ -33,8 +33,7 @@ public class TableValidatorTest
 	@Test
 	public void testTableValidator()
 	{
-		TableValidator validator = new TableValidator();
-		validator.visit(table);
+		table.validate();
 	}
 
 	
@@ -44,8 +43,7 @@ public class TableValidatorTest
 		table.getColumns().get(1).getConstraints().add(new MConstraint("PRIMARY KEY"));
 		try
 		{
-			TableValidator validator = new TableValidator();
-			validator.visit(table);
+			table.validate();
 			Assert.fail();
 		}
 		catch(IllegalStateException e)
@@ -53,5 +51,4 @@ public class TableValidatorTest
 			Assert.assertEquals("There are more than one primary keys in this table!", e.getMessage());
 		}
 	}
-
 }
