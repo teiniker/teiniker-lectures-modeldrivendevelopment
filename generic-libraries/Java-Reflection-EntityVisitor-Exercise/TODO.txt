@@ -1,7 +1,14 @@
-TODO: Java Reflection API - Entity Visitor
+Exercise: Java Reflection API - Entity Visitor
 -------------------------------------------------------------------------------
 
-Implementieren Sie das gebene "EntityVisitor" Interface mit Hilfe des Java
-Reflection API und nennen Sie die Klasse "EntityVisitorImpl".
+Implement the given "EntityVisitor" interface using the Java Reflection API and
+name the class "EntityVisitorImpl".
 
-Überprüfen Sie Ihre Implementierung mit der Klasse "EntityVisitorTest".
+- Check if the analyzed class has a "@Entity" annotation.
+- Read the class name
+- Read the attributes names and types
+- Check if an attribute is annotated as "@id"
+- Generate a summary string of the analyzed class:
+    Example: "User{ id:int[id] username:String password:String }""
+
+Verify your implementation with the class "EntityVisitorTest".
