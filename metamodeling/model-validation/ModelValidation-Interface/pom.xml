@@ -11,12 +11,4 @@
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.se.lab</groupId>
-			<artifactId>Metamodel-Interface</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
-
 </project>

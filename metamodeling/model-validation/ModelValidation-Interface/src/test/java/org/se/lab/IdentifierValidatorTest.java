@@ -3,17 +3,11 @@ package org.se.lab;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.se.lab.metamodel.MInterface;
-import org.se.lab.metamodel.MOperation;
-import org.se.lab.metamodel.MPackage;
-import org.se.lab.metamodel.MParameter;
-import org.se.lab.metamodel.MType;
 
 public class IdentifierValidatorTest
 {
 	private MPackage pkg;
-	private IdentifierValidator validator;
-	
+
 	@Before
 	public void setup()
 	{
@@ -30,8 +24,6 @@ public class IdentifierValidatorTest
 		iface.getOperations().add(new MOperation("top", new MType("int")));
 		iface.getOperations().add(new MOperation("isEmpty", new MType("boolean")));
 		iface.getOperations().add(new MOperation("isFull", new MType("boolean")));
-		
-		validator = new IdentifierValidator();
 	}
 
 	
@@ -42,12 +34,12 @@ public class IdentifierValidatorTest
 		
 		try
 		{
-			validator.visit(pkg);
+			pkg.validate();
 			Assert.fail();
 		}
 		catch(IllegalStateException e)
 		{
-			Assert.assertEquals("Invalid identifier null at org.se.lab.metamodel.MType", e.getMessage());
+			Assert.assertEquals("Invalid identifier null at org.se.lab.MType", e.getMessage());
 		}
 	}
 	
