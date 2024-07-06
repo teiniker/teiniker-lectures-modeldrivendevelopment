@@ -1,38 +1,33 @@
-Exercise: Model Validator
+Exercise: Model Validator - Interface
 ---------------------------------------------------------------------
 
-Ein Model-Validator wird verwendet, um eine Überprüfung eines bestehenden
-Modells durchzuführen. Dabei wird das Visitor Pattern angewendet. 
-Der Visitor besucht jeden Knoten im Objekt-Modell und überprüft dessen
-Daten. Zusätzlich übernimmt der Visitor auch die Navigation zwischen 
-den Knoten des Modells. 
+Add a model validation to the given meta-classes.
 
-
-1. Identifier Validator
+A) Identifier Validation
 ---------------------------------------------------------------------
-Implementieren Sie einen Visitor "IdentifierValidator", der die abstrakte
-Klasse "AbstractValidator" erbt.
-Dieser Validator soll die Identifiers (=Namen) folgender Knoten überprüfen:
+A valid identifier must not be "null" or an empty string.
+
+Validate the following nodes:
 	- MPackage
 	- MInterface
 	- MOperation
 	- MParameter
 	- MType
-Ein gültiger Identifier sollte ungleich null sein und auch ungleich "".	 
 
-Verwenden Sie die Klasse "IdentifierValidatorTest" um Ihre Implementierung
-zu überprüfen.
+In the case of a rule violation, the "IllegalStateException" should 
+be thrown.
+
+Use the "IdentifierValidatorTest" class to test your implementations.
 
 
-2. Method-Name Validator
+B) Method-Name Validation
 ---------------------------------------------------------------------
-Implementieren Sie einen Visitor "MethodNameValidator", der die abstrakte
-Klasse "AbstractValidator" erbt.
-Dieser Validator soll überprüfen, ob die Methoden Namen (= MOperation.name)
-mit einem Kleinbuchstaben beginnen. Alle Verstöße gegen diese Regel sollen
-in einer Liste mit dem Namen "upperCaseMethods" gespeichert werden.
+Validate the naming convention of Java method names:
+- Methods must start with a lower-case letter
 
-Verwenden Sie die Klasse "MethodNameValidatorTest" um Ihre Implementierung
-zu überprüfen.
+In the case of a rule violation, the "IllegalStateException" should 
+be thrown.
 
-Tipp: Verwenden Sie die Methode: Character.isUpperCase()
+Use the "MethodNameValidatorTest" class to test your implementations.
+
+Tip: You can use "Character.isUpperCase()" from the standard library.
