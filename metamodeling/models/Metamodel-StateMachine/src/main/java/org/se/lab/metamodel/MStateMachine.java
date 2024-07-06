@@ -22,8 +22,6 @@ public class MStateMachine
 	}
 	public void setStates(List<MState> states)
 	{
-		if (states == null)
-			throw new IllegalArgumentException("Illegal Argument: states must not be null!");
 		this.states = states;
 	}
 	
@@ -38,8 +36,6 @@ public class MStateMachine
 	}
 	public void setInitState(MState initState)
 	{
-		if (initState == null)
-			throw new IllegalArgumentException("Illegal Argument: initState must not be null!");
 		this.initState = initState;
 	}
 	
@@ -54,8 +50,6 @@ public class MStateMachine
 	}
 	public void setFinalState(List<MState> finalStates)
 	{
-		if (finalStates == null)
-			throw new IllegalArgumentException("Illegal Argument: finalState must not be null!");
 		this.finalStates = finalStates;
 	}
 }

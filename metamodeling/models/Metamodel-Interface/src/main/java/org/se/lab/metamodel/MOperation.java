@@ -25,8 +25,6 @@ public class MOperation
 	}
 	public void setParameters(List<MParameter> parameters)
 	{
-		if(parameters == null)
-			throw new IllegalArgumentException();
 		this.parameters = parameters;
 	}
 }

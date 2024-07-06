@@ -1,11 +1,19 @@
-package org.se.lab.metamodel;
+package org.se.lab;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class MProperty 
 	extends MNamedElement
 {
 	/*
 	 * Constructor
 	 */
+    protected MProperty() {}
+    
 	public MProperty(String name, MType type)
 	{
 		setName(name);
@@ -16,6 +24,7 @@ public class MProperty
 	/*
 	 * Property: type:MType
 	 */
+	@XmlElement
 	private MType type;
 	public MType getType()
 	{
@@ -30,6 +39,7 @@ public class MProperty
 	/*
 	 * Property: id:boolean
 	 */
+	@XmlAttribute
 	private boolean id;
 	public boolean isId()
 	{

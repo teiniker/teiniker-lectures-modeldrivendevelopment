@@ -21,8 +21,6 @@ public class MTransition
 	}
 	public void setTrigger(String trigger)
 	{
-		if (trigger == null)
-			throw new IllegalArgumentException("Illegal Argument: trigger must not be null!");
 		this.trigger = trigger;
 	}
 	
@@ -36,8 +34,6 @@ public class MTransition
 	}
 	public void setActivity(String activity)
 	{
-		if (activity == null)
-			throw new IllegalArgumentException("Illegal Argument: activity must not be null!");
 		this.activity = activity;
 	}
 	
@@ -51,8 +47,6 @@ public class MTransition
 	}
 	public void setTarget(MState target)
 	{
-		if (target == null)
-			throw new IllegalArgumentException("Illegal Argument: target must not be null!");
 		this.target = target;
 	}
 }

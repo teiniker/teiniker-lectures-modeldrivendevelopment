@@ -24,8 +24,6 @@ public class MState
 	}
 	public void setName(String name)
 	{
-		if (name == null)
-			throw new IllegalArgumentException("Illegal Argument: name must not be null!");
 		this.name = name;
 	}
 	
@@ -39,8 +37,6 @@ public class MState
 	}
 	public void setTransition(List<MTransition> transitions)
 	{
-		if (transitions == null)
-			throw new IllegalArgumentException("Illegal Argument: transitions must not be null!");
 		this.transitions = transitions;
 	}
 	
