@@ -19,7 +19,7 @@ relying solely on source code.
     * [Creating Metamodels](metamodeling/models/)
     * [Model Validation](metamodeling/model-validation/) 
     * Domain Specific Languages 
-        * [Internal DSL](metamodeling/dsl-intern/)
+        * [Internal DSL](metamodeling/dsl)
 
 * **Code Generation** 
     * [Generator Techniques](code-generation/generator/)
