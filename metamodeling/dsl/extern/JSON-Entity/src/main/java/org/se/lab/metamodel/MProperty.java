@@ -11,7 +11,8 @@ public class MProperty
 		setName(name);
 		setType(type);		
 	}
-	
+
+	protected MProperty() {}
 	
 	/*
 	 * Property: type:MType

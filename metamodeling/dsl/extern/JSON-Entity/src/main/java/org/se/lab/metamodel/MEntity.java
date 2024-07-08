@@ -13,7 +13,8 @@ public class MEntity
 	{
 		setName(name);
 	}
-	
+
+	protected MEntity() {}
 	
 	/*
 	 * Reference: ---[*]-> properties:MProperty[*]

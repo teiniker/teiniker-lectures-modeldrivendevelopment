@@ -1,0 +1,22 @@
+{
+  "name" : "User",
+  "properties" : [ {
+    "name" : "id",
+    "type" : {
+      "class" : "MInteger"
+    },
+    "id" : true
+  }, {
+    "name" : "username",
+    "type" : {
+      "class" : "MString"
+    },
+    "id" : false
+  }, {
+    "name" : "password",
+    "type" : {
+      "class" : "MString"
+    },
+    "id" : false
+  } ]
+}
