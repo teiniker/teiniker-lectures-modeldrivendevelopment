@@ -1,17 +1,9 @@
-package org.se.lab;
+package org.se.lab.metamodel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement(name="entity")
-@XmlAccessorType(XmlAccessType.FIELD)
-public class MEntity 
+public class MEntity
 	extends MNamedElement
 {
 	/*
@@ -30,8 +22,6 @@ public class MEntity
 	/*
 	 * Reference: ---[*]-> properties:MProperty[*]
 	 */
-	@XmlElementWrapper(name = "properties")
-	@XmlElement(name = "property")
 	private List<MProperty> properties = new ArrayList<MProperty>();
 	public List<MProperty> getProperties()
 	{

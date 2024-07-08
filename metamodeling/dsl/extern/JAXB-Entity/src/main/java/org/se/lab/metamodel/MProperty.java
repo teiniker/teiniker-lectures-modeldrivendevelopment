@@ -1,4 +1,4 @@
-package org.se.lab;
+package org.se.lab.metamodel;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

@@ -3,19 +3,19 @@
   "properties" : [ {
     "name" : "id",
     "type" : {
-      "class" : "MInteger"
+      "name" : "int"
     },
     "id" : true
   }, {
     "name" : "username",
     "type" : {
-      "class" : "MString"
+      "name" : "String"
     },
     "id" : false
   }, {
     "name" : "password",
     "type" : {
-      "class" : "MString"
+      "name" : "String"
     },
     "id" : false
   } ]

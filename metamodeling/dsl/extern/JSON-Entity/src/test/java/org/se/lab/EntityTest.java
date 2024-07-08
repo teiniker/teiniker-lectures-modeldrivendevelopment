@@ -9,9 +9,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.se.lab.metamodel.MEntity;
-import org.se.lab.metamodel.MInteger;
+import org.se.lab.metamodel.MType;
 import org.se.lab.metamodel.MProperty;
-import org.se.lab.metamodel.MString;
 
 public class EntityTest
 {
@@ -29,13 +28,12 @@ public class EntityTest
 	public void testEntityToJson() throws IOException
 	{
 		MEntity entity = new MEntity("User");
-		MProperty id = new MProperty("id", new MInteger());
+		MProperty id = new MProperty("id", new MType("int"));
 		id.setId(true);
 		entity.getProperties().add(id);
-		MString t = new MString();
-		MProperty p = new MProperty("username", t);
+		MProperty p = new MProperty("username", new MType("String"));
 		entity.getProperties().add(p);
-		entity.getProperties().add(new MProperty("password", new MString()));
+		entity.getProperties().add(new MProperty("password", new MType("String")));
 
 		mapper.writeValue(new File("entity.json"), entity);
 	}
@@ -50,16 +48,16 @@ public class EntityTest
 		MProperty id = entity.getProperties().get(0);
 		Assert.assertEquals("id", id.getName());
 		Assert.assertEquals(true, id.isId());
-		Assert.assertTrue(id.getType() instanceof MInteger);
+		Assert.assertEquals(id.getType().getName(), "int");
 
 		MProperty username = entity.getProperties().get(1);
 		Assert.assertEquals("username", username.getName());
 		Assert.assertEquals(false, username.isId());
-		Assert.assertTrue(username.getType() instanceof MString);
+		Assert.assertEquals(username.getType().getName(), "String");
 
 		MProperty password = entity.getProperties().get(2);
 		Assert.assertEquals("password", password.getName());
 		Assert.assertEquals(false, password.isId());
-		Assert.assertTrue(password.getType() instanceof MString);
+		Assert.assertEquals(password.getType().getName(), "String");
 	}
 }

@@ -18,6 +18,9 @@ import javax.xml.transform.stream.StreamSource;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.se.lab.metamodel.MEntity;
+import org.se.lab.metamodel.MProperty;
+import org.se.lab.metamodel.MType;
 import org.xml.sax.SAXException;
 
 public class JAXBTest
