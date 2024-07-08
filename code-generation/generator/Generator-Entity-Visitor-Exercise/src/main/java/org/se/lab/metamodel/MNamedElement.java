@@ -3,19 +3,9 @@ package org.se.lab.metamodel;
 public abstract class MNamedElement
 {
 	/*
-	 * Constructor
-	 */
-	public MNamedElement(String name)
-	{
-		setName(name);
-	}
-	
-	
-	/*
 	 * Property: name:String
 	 */
 	private String name;
-
 	public String getName()
 	{
 		return name;

@@ -1,5 +1,10 @@
 package org.se.lab;
 
+import org.se.lab.metamodel.MColumn;
+import org.se.lab.metamodel.MConstraint;
+import org.se.lab.metamodel.MTable;
+import org.se.lab.metamodel.MType;
+
 public class SqlGeneratorVisitor
 {
 

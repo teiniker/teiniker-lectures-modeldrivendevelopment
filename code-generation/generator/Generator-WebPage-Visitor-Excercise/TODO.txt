@@ -1,9 +1,5 @@
- 
- Generator Techniques
-----------------------------------
- 
- Code Generator (Visitor Pattern)
-----------------------------------
+ Exercise: Code Generator (Visitor Pattern)
+-------------------------------------------------------------------------------
 
 Implementieren Sie einen Code Generator "WebPageGenerator" mit Hilfe des Visitor
 Patterns, der aus einem WebPage Modell den passenden HTML Code generieren kann.

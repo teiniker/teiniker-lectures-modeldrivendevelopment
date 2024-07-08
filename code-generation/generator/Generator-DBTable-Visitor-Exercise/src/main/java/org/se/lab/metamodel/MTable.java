@@ -1,4 +1,4 @@
-package org.se.lab;
+package org.se.lab.metamodel;
 
 import java.util.ArrayList;
 import java.util.List;
