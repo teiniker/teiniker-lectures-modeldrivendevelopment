@@ -3,6 +3,7 @@ package org.se.lab;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.se.lab.metamodel.*;
 
 public class IdentifierValidatorTest
 {
@@ -39,7 +40,7 @@ public class IdentifierValidatorTest
 		}
 		catch(IllegalStateException e)
 		{
-			Assert.assertEquals("Invalid identifier null at org.se.lab.MType", e.getMessage());
+			Assert.assertEquals("Invalid identifier null at org.se.lab.metamodel.MType", e.getMessage());
 		}
 	}
 	

@@ -3,6 +3,10 @@ package org.se.lab;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.se.lab.metamodel.MColumn;
+import org.se.lab.metamodel.MConstraint;
+import org.se.lab.metamodel.MTable;
+import org.se.lab.metamodel.MType;
 
 public class TableValidatorTest
 {
@@ -33,8 +37,7 @@ public class TableValidatorTest
 	@Test
 	public void testTableValidator()
 	{
-		TableValidator validator = new TableValidator();
-		validator.visit(table);
+		table.validate();
 	}
 
 	
@@ -44,8 +47,7 @@ public class TableValidatorTest
 		table.getColumns().get(1).getConstraints().add(new MConstraint("PRIMARY KEY"));
 		try
 		{
-			TableValidator validator = new TableValidator();
-			validator.visit(table);
+			table.validate();
 			Assert.fail();
 		}
 		catch(IllegalStateException e)

@@ -3,6 +3,10 @@ package org.se.lab;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.se.lab.metamodel.MColumn;
+import org.se.lab.metamodel.MConstraint;
+import org.se.lab.metamodel.MTable;
+import org.se.lab.metamodel.MType;
 
 public class TableValidatorTest
 {

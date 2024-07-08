@@ -3,10 +3,7 @@ package org.se.lab;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.se.lab.metamodel.MInterface;
-import org.se.lab.metamodel.MOperation;
-import org.se.lab.metamodel.MPackage;
-import org.se.lab.metamodel.MParameter;
+import org.se.lab.metamodel.*;
 
 public class PackageBuilderTest
 {
